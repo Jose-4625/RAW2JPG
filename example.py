@@ -1,0 +1,3 @@
+import RAW2JPG
+
+conv = RAW2JPG.RAW2JPG()
