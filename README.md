@@ -8,8 +8,7 @@
 <td valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>RAW2JPG</strong></big></big></font></td
 ><td align=right valign=bottom
-><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/josetorres/Desktop/github/RAW2JPG/RAW2JPG.py">/Users/josetorres/Desktop/github/RAW2JPG/RAW2JPG.py</a></font></td></tr></table>
-    <p></p>
+>
 <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ee77aa">
