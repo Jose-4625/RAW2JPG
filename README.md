@@ -1,73 +1,82 @@
 # RAW2JPG
-## Inherts from:
-* builtins.object
 
-## Module
-* RAW2JPG
+One Paragraph of project description goes here
 
+## Getting Started
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Methods defined here:
-RAW2JPG
-object
-Dependencies: 
+### Prerequisites
+
+Required dependencies
+
+```
 NumPy  
 os  
 time 
 Image from PIL 
-raw from rawkit 
-Attributes: 
-self. queue  => [] 
-self. raw_type  => '.CR2' 
-self. jpgDir  => None 
-self. listdir  => os.listdir 
-self. mkdir  => os.mkdir 
-self. path  => os.path 
-self. utime  => os.utime 
-self. array  => np.array 
-self. Raw  => raw.Raw 
-self. time  => time.time 
-self. frombytes  => Image.frombytes   
+raw from rawkit
+```
 
-  <a name="RAW2JPG-addOutputPath" addOutputPath  (self, folder_path)   Define theSINGLE,JPEG
- output
- folderpath 
-Input: 
-folder_path 
-Output: 
-None   
+### Installing
 
-  <a name="RAW2JPG-addRawFile"> addRawFile  (self, file_path)   Add a SINGLE, RAW file path to the internal queue 
-Input: 
-    file_path 
-Output: 
-    None   
+Install dependencies
+```
+pip3 install pillow
+pip3 install numpy
+pip3 install rawkit
+apt-get install libraw-dev
+```
 
-  <a name="RAW2JPG-addRawFolder"> addRawFolder  (self, folder_path)   Add a SINGLE, RAW folder path to the internal queue 
-Input: 
-    folder_path 
-Output: 
-    None   
+Place RAW2JPG.py in project directory
+```
+(add an output)
+```
 
-  <a name="RAW2JPG-convertImages"> convertImages  (self)   Initiate CR2 to JPG conversion 
-Input: 
-    None 
-Output: 
-    None   
+## Running the tests
 
-  <a name="RAW2JPG-createFileSystem"> createFileSystem  (self)   Create CR2/JPG folder system for easy Input/Output 
-Input: 
-    None 
-Output: 
-    True (Bool)   
+Explain how to run the automated tests for this system
 
- 
-Data descriptors defined here: 
-   __dict__  
-  dictionary for instance variables (if defined)  
- 
-   __weakref__  
-  list of weak references to the object (if defined)  
- 
-      
-  
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
