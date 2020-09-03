@@ -1,6 +1,6 @@
 # RAW2JPG
 
-One Paragraph of project description goes here
+Simplistic Python wrapper for the *.CR2(RAW format) to *.JPG conversion functionality of the rawkit library.
 
 ## Getting Started
 
@@ -11,10 +11,10 @@ These instructions will get you a copy of the project up and running on your loc
 Required dependencies
 
 ```
-NumPy  
-os  
-time 
-Image from PIL 
+NumPy
+os
+time
+Image from PIL
 raw from rawkit
 ```
 
@@ -29,54 +29,64 @@ apt-get install libraw-dev
 ```
 
 Place RAW2JPG.py in project directory
-```
-(add an output)
-```
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+Once RAW2JPG.py is in the project directory, call the "test" method to ensure install is complete.
 ```
-Give an example
-```
+import RAW2JPG
 
-### And coding style tests
+test = RAW2JPG.RAW2JPG() # create RAW2JPG object
+test.test() # call the builtin test method
 
-Explain what these tests test and why
-
-```
-Give an example
+OUTPUT:
+checking dependencies...
+RAW2JPG is ready to be used!
 ```
 
-## Deployment
+### What is checked in the "test" method?
 
-Add additional notes about how to deploy this on a live system
+```
+1. Existence of NumPy in the workspace.
+2. Existence of Rawkit in the workspace.
+3. Existence of PIL in the workspace.
+4. Successful import of "raw" from Rawkit
+5. Successful import of "Image" from PIL
+```
 
-## Contributing
+## Usage example
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Already have a filesystem created:
+```
+import RAW2JPG
 
-## Versioning
+test = RAW2JPG.RAW2JPG() # create RAW2JPG object
+test.test() # call the builtin test method
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+OUTPUT:
+checking dependencies...
+RAW2JPG is ready to be used!
+```
+Have a filesystem created by the program
 
+```
+import RAW2JPG
+
+test = RAW2JPG.RAW2JPG() # create RAW2JPG object
+test.test() # call the builtin test method
+
+OUTPUT:
+checking dependencies...
+RAW2JPG is ready to be used!
+```
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Jose Torres** - *Maintainer*
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+*None*
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Rawkit

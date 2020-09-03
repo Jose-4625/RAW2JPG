@@ -43,6 +43,22 @@ class RAW2JPG(object):
     self.time = time.time
     self.frombytes = Image.frombytes
 
+  def test(self):
+      print("checking dependencies...")
+      try:
+        import numpy as np
+      except (ImportError, ModuleNotFoundError):
+        raise Exception("NumPy is not installed or not all dependencies were found, try: pip3 install numpy")
+      try:
+        from rawkit import raw
+      except (ImportError, ModuleNotFoundError):
+        raise Exception("rawkit is not installed or not all dependencies were found, try: pip3 install rawkit AND apt-get install libraw-dev")
+      try:
+        from PIL import Image
+      except (ImportError, ModuleNotFoundError):
+        raise Exception("PIL is not installed or not all dependencies were found, try: pip3 install pillow")
+      print("RAW2JPG is ready to be used!")
+
   def _Parse_File(self, file):
     """
     Parse the input RAW filename
